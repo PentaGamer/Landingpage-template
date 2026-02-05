@@ -8,6 +8,11 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        allowedHosts: ['landing-page.eimyhouse.qzz.io'],
+      },
+      preview: {
+          allowedHosts: ['landing-page.eimyhouse.qzz.io'],
+      },
       },
       plugins: [react()],
       define: {
